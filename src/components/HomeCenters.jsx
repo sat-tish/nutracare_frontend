@@ -3,6 +3,8 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import sliderImg from '../assets/images/background-images/b6.jpg'
+import SectionHeading from "./SectionHeading";
+import { Link } from "react-router";
 
 const HomeCenters = () => {
 
@@ -90,7 +92,7 @@ const settings = {
   return (
     <section className="w-full my-[50px] bg-white">
       <div className="w-[90%] m-auto">
-          <h1 className="text-center text-2xl font-semibold mb-[50px]">Find a Holistic center</h1>
+        <SectionHeading name="Find a Holistic center" />
             <div className="w-[90%] m-auto">
           <div className="slider-container">
       <Slider {...settings}>
@@ -101,10 +103,8 @@ const settings = {
       </div>
       
         <div className="w-[90%] text-end mt-[50px]">
-                <a href="#" class="inline-flex items-center px-3 py-1.5 text-sm text-center text-white bg-[#006D95] hover:bg-[#0473B9] rounded focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-                              View more +
-                </a>
-        </div>
+             <Link to="/allcenters" className="inline-flex items-center px-3 py-1.5 text-sm text-center text-white bg-[#006D95] hover:bg-[#0473B9] rounded focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">View more +</Link>  
+         </div>
     </section>
   )
 }

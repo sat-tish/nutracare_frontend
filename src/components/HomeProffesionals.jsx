@@ -6,6 +6,7 @@ import personOne from '../assets/images/illustrations/person_1.jpg.webp'
 import personFive from '../assets/images/illustrations/person_5.jpg.webp'
 import personSix from '../assets/images/illustrations/person_6.jpg.webp'
 import ProfessionalsCard from "./ProfessionalsCard";
+import SectionHeading from "./SectionHeading";
 
 const HomeProffesionals = () => {
     const settings = {
@@ -93,7 +94,7 @@ const HomeProffesionals = () => {
   return (
     <section className="w-full bg-[#EAF6FC] py-[50px]">
         <div className="w-[90%] m-auto">
-            <h1 className="text-center text-2xl font-semibold mb-[50px]">Find a Health Professional near you</h1>
+          <SectionHeading name="Find a Health Professional near you" />
            <div className="w-[90%] m-auto">
            <div className="slider-container">
            <Slider {...settings}>

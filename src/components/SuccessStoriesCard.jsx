@@ -3,7 +3,7 @@
 const SuccessStoriesCard = (props) => {
   return (
     <div className="w-[90%] m-auto">
-                <div key={props.key} className="w-[95%] py-5">
+                <div key={props.key} className="w-[95%] pb-5">
                        <div  class="w-full flex flex-wrap gap-3 justify-center items-center bg-white border border-gray-300 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
                      
                           <img class="flex-1 rounded-sm max-w-[380px] p-5 m-auto" src={props.cardImage} alt="" />

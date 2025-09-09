@@ -1,10 +1,11 @@
 
 import infoImg from '../assets/images/illustrations/yoga2.jpg'
+import SectionHeading from './SectionHeading'
 
 const Information = () => {
   return (
     <div className='w-full py-[50px] bg-white'>
-        <h1 className="text-center text-2xl font-semibold mb-[50px]">Holistic Approach</h1>
+      <SectionHeading name="Holistic Approach" />
       <div className='w-[90%] m-auto grid md:grid-cols-2'>
         <div className='w-full flex justify-center'>
             <img className='h-[400px]' src={infoImg} alt="" />

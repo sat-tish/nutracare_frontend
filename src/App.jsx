@@ -7,6 +7,7 @@ import JoinUs from "./pages/JoinUs"
 import Navigation from "./components/Navigation"
 import Footer from "./components/Footer"
 import MyComponent from "./components/MYComponent"
+import AllCenters from "./pages/AllCenters"
 
 function App() {
 
@@ -21,6 +22,7 @@ function App() {
       <Route path='/categories' element= {<Categories />}/>
       <Route path='/aboutus' element= {<AboutUs />}/>
       <Route path='/joinus' element= {<JoinUs />}/>
+      <Route path="/allcenters" element= {<AllCenters />}/>
     </Routes>
     <Footer />
   
