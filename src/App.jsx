@@ -6,12 +6,14 @@ import AboutUs from "./pages/AboutUs"
 import JoinUs from "./pages/JoinUs"
 import Navigation from "./components/Navigation"
 import Footer from "./components/Footer"
+import MyComponent from "./components/MYComponent"
 
 function App() {
 
 
   return (
     <>
+    {/* <MyComponent /> */}
     <Navigation />
     <Routes>
       <Route path='/' element= {<Home />}/>

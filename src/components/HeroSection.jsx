@@ -10,7 +10,7 @@ const HeroSection = () => {
     <div className="w-[90%] h-full m-auto lg:grid grid-cols-2">
          <div className="h-full flex justify-center items-center">
         <div className=" sm:w-[70%] my-[50px] bg-white py-5 rounded shadow">
-            <h1 className="text-center mt-7 mb-7 px-5"> Find a Healthcare Professional / Center near you</h1>
+            <h1 className="text-center font-semibold mt-7 mb-7 px-5"> Find a Healthcare Professional / Center near you</h1>
             <form action="" className="w-[90%] flex flex-col justify-center gap-y-4 m-auto">
                 <SelectCity />
                 <DoctorCenter />
@@ -20,8 +20,8 @@ const HeroSection = () => {
         </div>
      </div>
         <div className="m-auto text-white max-lg:hidden">
-          <h1 className=" text-4xl font-semibold mb-[50px]">Nutracare Holistic way of Healing</h1>
-          <div className="grid grid-cols-3 m-2 text-sm">
+          <h1 className=" text-4xl font-bold mb-[50px]">Nutracare Holistic way of Healing</h1>
+          <div className="grid grid-cols-3 m-2 text-sm font-semibold">
             <div className="flex flex-col justify-center ">
                 <Link className="text-gray-200 hover:text-white mb-1">Physiotherapist</Link>
                 <Link className="text-gray-200 hover:text-white mb-1">Nutritionist</Link>
@@ -35,7 +35,7 @@ const HeroSection = () => {
                 <Link className="text-gray-200 hover:text-white mb-1">Yoga</Link>
                 <Link className="text-gray-200 hover:text-white mb-1">Accupressure</Link>
             </div>
-            <div className="flex flex-col justify-center ">
+            <div className="flex flex-col justify-center">
                 <Link className="text-gray-200 hover:text-white mb-1">Chiropractor</Link>
                 <Link className="text-gray-200 hover:text-white mb-1">Naturopathy</Link>
                 <Link className="text-gray-200 hover:text-white mb-1">Ozone therapy</Link>
