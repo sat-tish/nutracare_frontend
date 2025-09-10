@@ -1,3 +1,5 @@
+import React, {useState, useEffect} from 'react'
+import axios from 'axios';
 import CenterCard from "./CenterCard"
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -8,6 +10,27 @@ import { Link } from "react-router";
 
 const HomeCenters = () => {
 
+const[centersList, setCentersList] = useState([]);
+const [loading, setLoading] = useState(true);
+const [error, setError] = useState(null);
+
+    useEffect(()=>{
+        axios.get("https://jsonplaceholder.typicode.com/users")
+        .then((res)=>{
+          setCentersList(res.data);
+          setLoading(false);
+        }
+      )
+        .catch((err)=>{
+          console.log(err);
+          setError(error);
+          setLoading(false);
+        }
+        )
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+    },[]);
+  if (loading) return <div>Loading data...</div>;
+  if (error) return <div>Error: {error.message}</div>;
 const settings = {
     dots: true,
     infinite: true,
@@ -44,48 +67,9 @@ const settings = {
     ]
   };
 
-   const professionalList = [
-          {
-              id:0,
-          cardImage: sliderImg,
-          centerName: "Noteworthy technology acquisitions",
-         
-          },
-          {
-              id:1,
-          cardImage: sliderImg,
-          centerName: "Noteworthy technology acquisitions",
-         
-          },
-          {
-              id:2,
-          cardImage: sliderImg,
-          centerName: "Noteworthy technology acquisitions",
-         
-          },
-          {
-              id:3,
-          cardImage: sliderImg,
-          centerName: "vimal lab",
-         
-          },
-          {
-              id:4,
-          cardImage: sliderImg,
-          centerName: "ss diagnostic",
-         
-          },
-          {
-              id:5,
-          cardImage: sliderImg,
-          centerName: "Noteworthy technology acquisitions",
-         
-          },
-        
-      ];
-  const slideItems = professionalList.map((e)=>{
+  const slideItems = centersList.map((e)=>{
         return(
-            <CenterCard key={e.id} cardImage={e.cardImage} centerName={e.centerName} />
+            <CenterCard key={e.id} cardImage={sliderImg} centerName={e.company.name} email={e.email} address={e.address.city}/>
         )
     });
 

@@ -12,8 +12,8 @@ const CenterCard = (props) => {
                           <a href="#">
                               <h5 class="mb-2 text-lg font-semibold text-gray-900 dark:text-white">{props.centerName}</h5>
                           </a>
-                          <p class="text-sm font-normal text-gray-700 dark:text-gray-400">Short address of center</p>
-                          <p class="mb-3 text-sm font-normal text-gray-700 dark:text-gray-400">emailaddress@gmail.com</p>
+                          <p class="text-sm font-normal text-gray-700 dark:text-gray-400">{props.address}</p>
+                          <p class="mb-3 text-sm font-normal text-gray-700 dark:text-gray-400">{props.email}</p>
                           <h4 className='text-base font-semibold text-gray-900 mb-3'>Services -</h4>
                           <div className='flex flex-wrap justify-between gap-x-5 mb-6'>
                               <h6 className='text-sm font-normal text-gray-700 dark:text-gray-400'>Ayurveda</h6>

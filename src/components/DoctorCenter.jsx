@@ -2,7 +2,7 @@
 
 const DoctorCenter = () => {
   return (
-     <div class="relative w-[90%] m-auto">
+     <div class="relative ">
   <select class="block appearance-none w-full bg-white border border-gray-500 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-blue-500" id="grid-state">
             <option value="">Professionals</option>
             <option value="">centers</option>

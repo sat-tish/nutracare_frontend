@@ -1,13 +1,38 @@
+import React, {useState, useEffect} from 'react'
+import axios from 'axios';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import personOne from '../assets/images/illustrations/person_1.jpg.webp'
-import personFive from '../assets/images/illustrations/person_5.jpg.webp'
-import personSix from '../assets/images/illustrations/person_6.jpg.webp'
+// import personFive from '../assets/images/illustrations/person_5.jpg.webp'
+// import personSix from '../assets/images/illustrations/person_6.jpg.webp'
 import SuccessStoriesCard from "./SuccessStoriesCard";
 import SectionHeading from "./SectionHeading";
 
 const HomeSuccessStories = () => {
+
+ const[doctorList, setDoctorList] = useState([]);
+      const [loading, setLoading] = useState(true);
+      const [error, setError] = useState(null);
+
+    useEffect(()=>{
+        axios.get("https://jsonplaceholder.typicode.com/users")
+        .then((res)=>{
+          setDoctorList(res.data);
+          setLoading(false);
+        }
+      )
+        .catch((err)=>{
+          console.log(err);
+          setError(error);
+          setLoading(false);
+        }
+        )
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+    },[]);
+  if (loading) return <div>Loading data...</div>;
+  if (error) return <div>Error: {error.message}</div>;
+
     const settings = {
     dots: true,
     infinite: true,
@@ -18,48 +43,11 @@ const HomeSuccessStories = () => {
     autoplaySpeed: 5000,
     
   };
-const successStoryList = [
-        {
-            id:0,
-        cardImage: personOne,
-        doctorName: "Dr Louis Henry",
-       
-        },
-        {
-            id:1,
-        cardImage: personFive,
-        doctorName: "Dr Richard Henry",
-       
-        },
-        {
-            id:2,
-        cardImage: personSix,
-        doctorName: "DR Thomos Cook",
-       
-        },
-        {
-            id:3,
-        cardImage: personOne,
-        doctorName: "Dr Richard Henry",
-       
-        },
-        {
-            id:4,
-        cardImage: personFive,
-        doctorName: "DR Thomos Cook",
-       
-        },
-        {
-            id:5,
-        cardImage: personSix,
-        doctorName: "Dr Richard Henry",
-       
-        },
-      
-    ];
-    const slideItems = successStoryList.map((e)=>{
+
+    const slideItems = doctorList.map((e)=>{
         return(
-            <SuccessStoriesCard key={e.id} cardImage={e.cardImage} doctorName={e.doctorName} />   
+            <SuccessStoriesCard key={e.id} cardImage={personOne} doctorName={e.name} email={e.email}
+            street={e.address.street} suite={e.address.suite} city={e.address.city} />   
         )
     });
 

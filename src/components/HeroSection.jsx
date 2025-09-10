@@ -3,6 +3,7 @@ import { Link } from "react-router"
 import SelectCity from "./SelectCity"
 import DoctorCenter from "./DoctorCenter"
 import Category from "./Category"
+import SearchButton from "./SearchButton"
 
 const HeroSection = () => {
   return (
@@ -11,11 +12,11 @@ const HeroSection = () => {
          <div className="h-full flex justify-center items-center">
         <div className=" sm:w-[70%] my-[50px] bg-white py-5 rounded shadow">
             <h1 className="text-center font-semibold mt-7 mb-7 px-5"> Find a Healthcare Professional / Center near you</h1>
-            <form action="" className="w-[90%] flex flex-col justify-center gap-y-4 m-auto">
+            <form action="" className="w-[84%] flex flex-col justify-center gap-y-4 m-auto mb-5">
                 <SelectCity />
                 <DoctorCenter />
                 <Category />
-                <button type="button" class="mb-7 w-[90%] m-auto text-white bg-[#0086C6] hover:bg-[#0473B9] focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-base py-3 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">Search</button>
+                <SearchButton />
             </form>
         </div>
      </div>
