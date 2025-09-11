@@ -8,6 +8,12 @@ import Navigation from "./components/Navigation"
 import Footer from "./components/Footer"
 import MyComponent from "./components/MYComponent"
 import AllCenters from "./pages/AllCenters"
+import AllProfessionals from "./pages/AllProfessionals"
+import SingleCenter from "./pages/SingleCenter"
+import SingleProfessional from "./pages/SingleProfessional"
+import AllSuccessStories from "./pages/AllSuccessStories"
+import SingleSuccessStory from "./pages/SingleSuccessStory"
+import SingleBlog from "./pages/SingleBlog"
 
 function App() {
 
@@ -23,6 +29,12 @@ function App() {
       <Route path='/aboutus' element= {<AboutUs />}/>
       <Route path='/joinus' element= {<JoinUs />}/>
       <Route path="/allcenters" element= {<AllCenters />}/>
+      <Route path="/allprofessionals" element= {<AllProfessionals />}/>
+      <Route path="/singlecenter" element= {<SingleCenter />}/>
+      <Route path="/singleprofessional" element={<SingleProfessional />} />
+      <Route path="/allsuccessstories" element={<AllSuccessStories />} />
+      <Route path="/singlesuccessstory" element={<SingleSuccessStory />} />
+      <Route path="/singleblog" element={<SingleBlog />} />
     </Routes>
     <Footer />
   

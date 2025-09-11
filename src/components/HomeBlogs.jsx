@@ -52,9 +52,7 @@ const [error, setError] = useState(null);
                     <p className=' mb-4'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim accusamus amet laboriosam quaerat, 
                         doloribus dolore? Nobis deserunt, possimus corporis ut nulla, 
                         cupiditate illum quo odit sed, laboriosam quidem consectetur assumenda.</p>
-                 {/* <a href="#" class="w-[70%] flex justify-center items-center px-3 py-3 text-center text-white bg-[#006D95] hover:bg-[#0473B9] rounded focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-                              View All Blogs
-                   </a> */}
+                
                    <Link to={'/blogs'} className='w-[70%] flex justify-center items-center px-3 py-3 text-center text-white bg-[#006D95] hover:bg-[#0473B9] rounded focus:ring-4 focus:outline-none
                     focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800'>View All Blogs</Link>
                   </div>

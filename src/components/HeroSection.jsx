@@ -24,23 +24,23 @@ const HeroSection = () => {
           <h1 className=" text-4xl font-bold mb-[50px]">Nutracare Holistic way of Healing</h1>
           <div className="grid grid-cols-3 m-2 text-sm font-semibold">
             <div className="flex flex-col justify-center ">
-                <Link className="text-gray-200 hover:text-white mb-1">Physiotherapist</Link>
-                <Link className="text-gray-200 hover:text-white mb-1">Nutritionist</Link>
-                <Link className="text-gray-200 hover:text-white mb-1">Osteopathy</Link>
-                <Link className="text-gray-200 hover:text-white mb-1">Traditional Chinese</Link>
+                <Link to={'/categories'} className="text-gray-200 hover:text-white mb-1">Physiotherapist</Link>
+                <Link to={'/categories'} className="text-gray-200 hover:text-white mb-1">Nutritionist</Link>
+                <Link to={'/categories'} className="text-gray-200 hover:text-white mb-1">Osteopathy</Link>
+                <Link to={'/categories'} className="text-gray-200 hover:text-white mb-1">Traditional Chinese</Link>
                
             </div>
             <div className="flex flex-col justify-center ">
-                <Link className="text-gray-200 hover:text-white mb-1">Homeopathy</Link>
-                <Link className="text-gray-200 hover:text-white mb-1">Ayurveda</Link>
-                <Link className="text-gray-200 hover:text-white mb-1">Yoga</Link>
-                <Link className="text-gray-200 hover:text-white mb-1">Accupressure</Link>
+                <Link to={'/categories'} className="text-gray-200 hover:text-white mb-1">Homeopathy</Link>
+                <Link to={'/categories'} className="text-gray-200 hover:text-white mb-1">Ayurveda</Link>
+                <Link to={'/categories'} className="text-gray-200 hover:text-white mb-1">Yoga</Link>
+                <Link to={'/categories'} className="text-gray-200 hover:text-white mb-1">Accupressure</Link>
             </div>
             <div className="flex flex-col justify-center">
-                <Link className="text-gray-200 hover:text-white mb-1">Chiropractor</Link>
-                <Link className="text-gray-200 hover:text-white mb-1">Naturopathy</Link>
-                <Link className="text-gray-200 hover:text-white mb-1">Ozone therapy</Link>
-                <Link className="text-gray-200 hover:text-white mb-1">Find More +</Link>
+                <Link to={'/categories'} className="text-gray-200 hover:text-white mb-1">Chiropractor</Link>
+                <Link to={'/categories'} className="text-gray-200 hover:text-white mb-1">Naturopathy</Link>
+                <Link to={'/categories'} className="text-gray-200 hover:text-white mb-1">Ozone therapy</Link>
+                <Link to={'/categories'} className="text-gray-200 hover:text-white mb-1">Find More +</Link>
             </div>
           </div>
      </div>

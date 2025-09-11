@@ -8,6 +8,7 @@ import personOne from '../assets/images/illustrations/person_1.jpg.webp'
 // import personSix from '../assets/images/illustrations/person_6.jpg.webp'
 import SuccessStoriesCard from "./SuccessStoriesCard";
 import SectionHeading from "./SectionHeading";
+import { Link } from 'react-router';
 
 const HomeSuccessStories = () => {
 
@@ -66,9 +67,9 @@ const HomeSuccessStories = () => {
         
         </div>
          <div className="w-[90%] m-auto text-center mt-[50px]">
-                <a href="#" class="inline-flex items-center px-15 py-3 text-sm text-center text-white bg-[#006D95] hover:bg-[#0473B9] rounded focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                <Link to={'/allsuccessstories'} className="inline-flex items-center px-15 py-3 text-sm text-center text-white bg-[#006D95] hover:bg-[#0473B9] rounded focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
                               View All 
-                </a>
+                </Link>
         </div>
     </section>
   )
