@@ -1,6 +1,6 @@
 
 import infoImg from '../assets/images/illustrations/yoga2.jpg'
-import SectionHeading from './SectionHeading'
+import SectionHeading from '../commonComponents/SectionHeading'
 
 const Information = () => {
   return (
