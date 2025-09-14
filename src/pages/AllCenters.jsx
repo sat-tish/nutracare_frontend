@@ -1,9 +1,9 @@
 import React, {useState, useEffect} from 'react'
 import axios from 'axios';
-import SearchBox from "../components/SearchBox"
-import SectionHeading from "../components/SectionHeading"
+import SearchBox from "../commonComponents/SearchBox"
+import SectionHeading from "../commonComponents/SectionHeading"
 import sliderImg from '../assets/images/background-images/b6.jpg'
-import CenterCard from "../components/CenterCard";
+import CenterCard from "../commonComponents/CenterCard";
 
 
 const AllCenters = () => {

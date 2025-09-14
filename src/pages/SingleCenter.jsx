@@ -1,8 +1,7 @@
 import centerName from '../assets/images/illustrations/yogaImage.jpg'
 import SililarCenters from '../components/SililarCenters';
-import SimilarProfessionals from '../components/SimilarProfessionals';
 import SingleGallary from '../components/SingleGallary';
-import WeekTimings from '../components/WeekTimings';
+import WeekTimings from '../commonComponents/WeekTimings';
 
 const SingleCenter = () => {
   return (

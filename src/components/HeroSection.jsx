@@ -1,9 +1,9 @@
 
-import { Link } from "react-router"
-import SelectCity from "./SelectCity"
-import DoctorCenter from "./DoctorCenter"
-import Category from "./Category"
-import SearchButton from "./SearchButton"
+import HeroSectionLinks from "../commonComponents/HeroSectionLinks"
+import SelectCity from "../commonComponents/SelectCity"
+import DoctorCenter from "../commonComponents/DoctorCenter"
+import SearchButton from "../commonComponents/SearchButton"
+import Category from "../commonComponents/Category"
 
 const HeroSection = () => {
   return (
@@ -24,23 +24,23 @@ const HeroSection = () => {
           <h1 className=" text-4xl font-bold mb-[50px]">Nutracare Holistic way of Healing</h1>
           <div className="grid grid-cols-3 m-2 text-sm font-semibold">
             <div className="flex flex-col justify-center ">
-                <Link to={'/categories'} className="text-gray-200 hover:text-white mb-1">Physiotherapist</Link>
-                <Link to={'/categories'} className="text-gray-200 hover:text-white mb-1">Nutritionist</Link>
-                <Link to={'/categories'} className="text-gray-200 hover:text-white mb-1">Osteopathy</Link>
-                <Link to={'/categories'} className="text-gray-200 hover:text-white mb-1">Traditional Chinese</Link>
+              <HeroSectionLinks linkName="Physiotherapist" />
+              <HeroSectionLinks linkName="Nutritionist" />
+              <HeroSectionLinks linkName="Osteopathy" />
+              <HeroSectionLinks linkName="Traditional Chinese" />
                
             </div>
             <div className="flex flex-col justify-center ">
-                <Link to={'/categories'} className="text-gray-200 hover:text-white mb-1">Homeopathy</Link>
-                <Link to={'/categories'} className="text-gray-200 hover:text-white mb-1">Ayurveda</Link>
-                <Link to={'/categories'} className="text-gray-200 hover:text-white mb-1">Yoga</Link>
-                <Link to={'/categories'} className="text-gray-200 hover:text-white mb-1">Accupressure</Link>
+              <HeroSectionLinks linkName="Homeopathy" />
+              <HeroSectionLinks linkName="Ayurveda" />
+              <HeroSectionLinks linkName="Yoga" />
+              <HeroSectionLinks linkName="Accupressure" />
             </div>
             <div className="flex flex-col justify-center">
-                <Link to={'/categories'} className="text-gray-200 hover:text-white mb-1">Chiropractor</Link>
-                <Link to={'/categories'} className="text-gray-200 hover:text-white mb-1">Naturopathy</Link>
-                <Link to={'/categories'} className="text-gray-200 hover:text-white mb-1">Ozone therapy</Link>
-                <Link to={'/categories'} className="text-gray-200 hover:text-white mb-1">Find More +</Link>
+              <HeroSectionLinks linkName="Chiropractor" />
+              <HeroSectionLinks linkName="Naturopathy" />
+              <HeroSectionLinks linkName="Ozone therapy" />
+              <HeroSectionLinks linkName="Find More +" />
             </div>
           </div>
      </div>

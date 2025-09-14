@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from 'react'
 import axios from 'axios';
-import BlogCard from './BlogCard'
+import BlogCard from '../commonComponents/BlogCard'
 import cardImage from '../assets/images/illustrations/b3.jpeg'
 import { Link } from 'react-router';
 

@@ -6,8 +6,8 @@ import Slider from "react-slick";
 import personOne from '../assets/images/illustrations/person_1.jpg.webp'
 // import personFive from '../assets/images/illustrations/person_5.jpg.webp'
 // import personSix from '../assets/images/illustrations/person_6.jpg.webp'
-import SuccessStoriesCard from "./SuccessStoriesCard";
-import SectionHeading from "./SectionHeading";
+import SuccessStoriesCard from "../commonComponents/SuccessStoriesCard";
+import SectionHeading from "../commonComponents/SectionHeading";
 import { Link } from 'react-router';
 
 const HomeSuccessStories = () => {

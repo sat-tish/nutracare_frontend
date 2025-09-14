@@ -1,8 +1,8 @@
 import React, {useState, useEffect} from 'react'
 import axios from 'axios';
-import BlogCard from "../components/BlogCard"
-import SearchBox from "../components/SearchBox"
-import SectionHeading from "../components/SectionHeading"
+import BlogCard from "../commonComponents/BlogCard"
+import SearchBox from "../commonComponents/SearchBox"
+import SectionHeading from "../commonComponents/SectionHeading"
 import blogImg from '../assets/images/illustrations/b3.jpeg'
 
 const Blogs = () => {

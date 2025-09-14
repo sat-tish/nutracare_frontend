@@ -6,8 +6,8 @@ import Slider from "react-slick";
 import personOne from '../assets/images/illustrations/person_1.jpg.webp'
 // import personFive from '../assets/images/illustrations/person_5.jpg.webp'
 // import personSix from '../assets/images/illustrations/person_6.jpg.webp'
-import ProfessionalsCard from "./ProfessionalsCard";
-import SectionHeading from "./SectionHeading";
+import ProfessionalsCard from "../commonComponents/ProfessionalsCard";
+import SectionHeading from "../commonComponents/SectionHeading";
 import { Link } from 'react-router';
 
 const HomeProffesionals = () => {

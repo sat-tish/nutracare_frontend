@@ -1,9 +1,9 @@
 import React, {useState, useEffect} from 'react'
 import axios from 'axios';
-import SearchBox from "../components/SearchBox"
-import SectionHeading from "../components/SectionHeading"
+import SearchBox from "../commonComponents/SearchBox"
+import SectionHeading from "../commonComponents/SectionHeading"
 import personOne from '../assets/images/illustrations/person_1.jpg.webp'
-import SuccessStoriesCard from '../components/SuccessStoriesCard';
+import SuccessStoriesCard from '../commonComponents/SuccessStoriesCard';
 
 const AllSuccessStories = () => {
 

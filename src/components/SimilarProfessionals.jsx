@@ -1,8 +1,8 @@
 import React, {useState, useEffect} from 'react'
 import axios from 'axios';
-import SectionHeading from "../components/SectionHeading"
+import SectionHeading from "../commonComponents/SectionHeading"
 import personOne from '../assets/images/illustrations/person_1.jpg.webp'
-import ProfessionalsCard from '../components/ProfessionalsCard';
+import ProfessionalsCard from '../commonComponents/ProfessionalsCard';
 
 const SimilarProfessionals = () => {
 

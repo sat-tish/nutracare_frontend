@@ -1,11 +1,11 @@
 import React, {useState, useEffect} from 'react'
 import axios from 'axios';
-import CenterCard from "./CenterCard"
+import CenterCard from "../commonComponents/CenterCard"
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import sliderImg from '../assets/images/background-images/b6.jpg'
-import SectionHeading from "./SectionHeading";
+import SectionHeading from "../commonComponents/SectionHeading";
 import { Link } from "react-router";
 
 const HomeCenters = () => {

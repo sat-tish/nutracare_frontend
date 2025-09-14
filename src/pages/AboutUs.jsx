@@ -1,4 +1,4 @@
-import SectionHeading from "../components/SectionHeading"
+import SectionHeading from "../commonComponents/SectionHeading"
 import logoImage from '../assets/images/illustrations/Nutracare_multi_logo.jpg'
 import personOne from '../assets/images/illustrations/person_1.jpg.webp'
 

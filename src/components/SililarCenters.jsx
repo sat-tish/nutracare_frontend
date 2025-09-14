@@ -1,8 +1,8 @@
 import React, {useState, useEffect} from 'react'
 import axios from 'axios';
-import SectionHeading from "../components/SectionHeading"
+import SectionHeading from "../commonComponents/SectionHeading"
 import sliderImg from '../assets/images/background-images/b6.jpg'
-import CenterCard from "../components/CenterCard";
+import CenterCard from "../commonComponents/CenterCard";
 
 const SililarCenters = () => {
 

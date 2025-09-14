@@ -1,4 +1,6 @@
 import { Link } from "react-router"
+import SocialMediaIcons from "../commonComponents/socialMediaIcons"
+import FooterLinkCategories from "../commonComponents/FooterLinkCategories"
 
 
 
@@ -16,21 +18,7 @@ const Footer = () => {
             </div>
             <div className="mb-5">
               <h1 className="mb-3 font-medium text-white">Connect on Social Media</h1>
-              <div className="w-full flex gap-3 justify-center ">
-                <div className="w-[30px] h-[30px] rounded-[50%] bg-blue-100 flex justify-center items-center">
-                    <h6>F</h6>
-                </div>
-                <div className="w-[30px] h-[30px] rounded-[50%] bg-blue-100 flex justify-center items-center">
-                    <h6>F</h6>
-                </div>
-                <div className="w-[30px] h-[30px] rounded-[50%] bg-blue-100 flex justify-center items-center">
-                    <h6>F</h6>
-                </div>
-                <div className="w-[30px] h-[30px] rounded-[50%] bg-blue-100 flex justify-center items-center">
-                    <h6>F</h6>
-                </div>
-
-              </div>
+              <SocialMediaIcons />
             </div>
           </div>
         </div>
@@ -38,42 +26,42 @@ const Footer = () => {
          
             <div className="flex flex-col gap-3 mb-3">
               <h1 className="font-medium mb-2 text-white">Links</h1>
-              <Link className="text-sm text-gray-100 hover:text-white hover:font-medium" to={'/'}>Home</Link>
-              <Link className="text-sm text-gray-100 hover:text-white hover:font-medium" to={'/categories'}>Categories</Link>
-              <Link className="text-sm text-gray-100 hover:text-white hover:font-medium" to={'/blogs'}>Blogs</Link>
-              <Link className="text-sm text-gray-100 hover:text-white hover:font-medium" to={'/aboutus'}>About us</Link>
-              <Link className="text-sm text-gray-100 hover:text-white hover:font-medium" to={'/joinus'}>Join us</Link>
+              <FooterLinkCategories linkTo="/" linkName="Home" />
+              <FooterLinkCategories linkTo="/categories" linkName="Categories" />
+              <FooterLinkCategories linkTo="/blogs" linkName="Blogs" />
+              <FooterLinkCategories linkTo="/aboutus" linkName="About us" />
+              <FooterLinkCategories linkTo="/joinus" linkName="Join us" />
             </div>
             <div className="flex flex-col gap-3 mb-3">
               <h1 className="font-medium mb-2 text-white">Top Categories</h1>
-              <Link className="text-sm text-gray-100 hover:text-white hover:font-medium" to={'/categories'}>Physiotherapist</Link>
-              <Link className="text-sm text-gray-100 hover:text-white hover:font-medium" to={'/categories'}>Nutritionist</Link>
-              <Link className="text-sm text-gray-100 hover:text-white hover:font-medium" to={'/categories'}>Osteopathy</Link>
-              <Link className="text-sm text-gray-100 hover:text-white hover:font-medium" to={'/categories'}>Accupuncture</Link>
-              <Link className="text-sm text-gray-100 hover:text-white hover:font-medium" to={'/categories'}>Traditional Chinease medicine</Link>
+              <FooterLinkCategories linkTo="/categories" linkName="Physiotherapist" />
+              <FooterLinkCategories linkTo="/categories" linkName="Nutritionist" />
+              <FooterLinkCategories linkTo="/categories" linkName="Osteopathy" />
+              <FooterLinkCategories linkTo="/categories" linkName="Accupuncture" />
+              <FooterLinkCategories linkTo="/categories" linkName="Traditional Chinease medicine" />
             </div>
              <div className="flex flex-col gap-3 mb-3">
               <h1 className="font-medium mb-2 text-white">Top Categories</h1>
-              <Link className="text-sm text-gray-100 hover:text-white hover:font-medium" to={'/categories'}>Homeopathy</Link>
-              <Link className="text-sm text-gray-100 hover:text-white hover:font-medium" to={'/categories'}>Ayurveda</Link>
-              <Link className="text-sm text-gray-100 hover:text-white hover:font-medium" to={'/categories'}>Yoga</Link>
-              <Link className="text-sm text-gray-100 hover:text-white hover:font-medium" to={'/categories'}>Massage Therapist</Link>
-              <Link className="text-sm text-gray-100 hover:text-white hover:font-medium" to={'/categories'}>Accupressure</Link>
-            </div>
+              <FooterLinkCategories linkTo="/categories" linkName="Homeopathy" />
+              <FooterLinkCategories linkTo="/categories" linkName="Ayurveda" />
+              <FooterLinkCategories linkTo="/categories" linkName="Yoga" />
+              <FooterLinkCategories linkTo="/categories" linkName="Massage Therapist" />
+              <FooterLinkCategories linkTo="/categories" linkName="Accupressure" />
+             </div>
             <div className="flex flex-col gap-3 mb-3">
               <h1 className="font-medium mb-2 text-white">Top Categories</h1>
-              <Link className="text-sm text-gray-100 hover:text-white hover:font-medium" to={'/categories'}>Chiropractor</Link>
-              <Link className="text-sm text-gray-100 hover:text-white hover:font-medium" to={'/categories'}>Naturopathy</Link>
-              <Link className="text-sm text-gray-100 hover:text-white hover:font-medium" to={'/categories'}>Ozone Therapy</Link>
-              <Link className="text-sm text-gray-100 hover:text-white hover:font-medium" to={'/categories'}>Prolotherapy</Link>
-              <Link className="text-sm text-gray-100 hover:text-white hover:font-medium" to={'/categories'}>Reflexology</Link>
+              <FooterLinkCategories linkTo="/categories" linkName="Chiropractor" />
+              <FooterLinkCategories linkTo="/categories" linkName="Naturopathy" />
+              <FooterLinkCategories linkTo="/categories" linkName="Ozone Therapy" />
+              <FooterLinkCategories linkTo="/categories" linkName="Prolotherapy" />
+              <FooterLinkCategories linkTo="/categories" linkName="Reflexology" />
             </div>
           
          
         </div>
       </div>
       <div className="mt-[80px] px-5">
-         <h1 className="text-sm text-center text-gray-100">Copyright ©2024 All rights reserved | Made by Canayu Nutracare 360 Pvt Ltd.</h1>
+         <h1 className="text-sm text-center text-gray-100">Copyright ©2024 All rights reserved | Made by Nutracare 360 Pvt Ltd.</h1>
       </div>
     </section>
   )

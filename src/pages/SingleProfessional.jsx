@@ -1,7 +1,7 @@
 import personOne from '../assets/images/illustrations/person_1.jpg.webp'
 import SimilarProfessionals from '../components/SimilarProfessionals';
 import SingleGallary from '../components/SingleGallary';
-import WeekTimings from '../components/WeekTimings';
+import WeekTimings from '../commonComponents/WeekTimings';
 
 const SingleProfessional = () => {
 
