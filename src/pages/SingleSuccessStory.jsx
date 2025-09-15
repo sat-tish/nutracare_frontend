@@ -40,22 +40,22 @@ const[doctorList, setDoctorList] = useState([]);
     });
 
   return (
-    <section className='w-full bg-[#f5fafc]'>
+    <section className='w-full bg-[#f5fafc] mt-14'>
      <div className="w-[90%] md:w-[80%] lg:w-[70%] m-auto py-[50px]">
-                <div className="w-[95%] pb-5 bg-white border border-gray-300 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+                <div className="w-[95%] pb-5 bg-white border border-gray-300 rounded-lg shadow">
                        <div  className="w-full flex flex-wrap gap-x-5 justify-center items-center ">
                      
                           <img className="flex-1 rounded-sm w-[300px] md:max-w-[380px] p-5 m-auto" src={personOne} alt="" />
                      
                           <div className="p-5 flex-1">
-                              <h1 className="mb-2 text-lg font-semibold text-gray-900 dark:text-white">Doctor Name</h1>
+                              <h1 className="mb-2 text-lg font-semibold text-gray-900">Doctor Name</h1>
                               
                          
-                          <p className="mb-3 text-sm font-medium text-gray-900 dark:text-gray-400">Speciality</p>
-                          <p className="mb-3 text-sm font-normal text-gray-700 dark:text-gray-400">address of clinic</p>
-                          <p className="mb-3 text-sm font-normal text-gray-700 dark:text-gray-400">emailaddress@email.com</p>
-                          <p className="mb-5 text-sm font-normal text-gray-700 dark:text-gray-400">phone number</p>
-                           <button className='inline-flex items-center px-3 py-1.5 text-sm text-center text-white bg-[#006D95] hover:bg-[#0473B9] rounded focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800'>
+                          <p className="mb-3 text-sm font-medium text-gray-900">Speciality</p>
+                          <p className="mb-3 text-sm font-normal text-gray-700">address of clinic</p>
+                          <p className="mb-3 text-sm font-normal text-gray-700">emailaddress@email.com</p>
+                          <p className="mb-5 text-sm font-normal text-gray-700">phone number</p>
+                           <button className='inline-flex items-center px-3 py-1.5 text-sm text-center text-white bg-[#006D95] hover:bg-[#0473B9] rounded focus:ring-4 focus:outline-none focus:ring-blue-300'>
                              View more +</button>
                           
                       </div>
@@ -76,9 +76,9 @@ const[doctorList, setDoctorList] = useState([]);
                            suscipit, quia dolorem quae provident iste sint nostrum accusamus!</p>
                   </div>
                   <div className='flex justify-between p-5'>
-                        <button className='inline-flex items-center px-3 py-1.5 text-sm text-center text-white bg-[#006D95] hover:bg-[#0473B9] rounded focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800'>
+                        <button className='inline-flex items-center px-3 py-1.5 text-sm text-center text-white bg-[#006D95] hover:bg-[#0473B9] rounded focus:ring-4 focus:outline-none focus:ring-blue-300'>
                 View more +</button>
-                <button className='inline-flex items-center px-5 py-3 text-sm text-center text-white bg-[#078d07] hover:bg-[#024c02] rounded focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800'>
+                <button className='inline-flex items-center px-5 py-3 text-sm text-center text-white bg-[#078d07] hover:bg-[#024c02] rounded focus:ring-4 focus:outline-none focus:ring-blue-300'>
                 Book Appointment</button>
                   </div>
                 </div>

@@ -41,7 +41,7 @@ const [error, setError] = useState(null);
       })
 
   return (
-     <div className='w-full py-[50px]'>
+     <section className='w-full py-[50px]'>
            
           <div className='w-[90%] lg:w-[80%] m-auto grid lg:grid-cols-4'>
             {allBlogs}
@@ -54,12 +54,12 @@ const [error, setError] = useState(null);
                         cupiditate illum quo odit sed, laboriosam quidem consectetur assumenda.</p>
                 
                    <Link to={'/blogs'} className='w-[70%] flex justify-center items-center px-3 py-3 text-center text-white bg-[#006D95] hover:bg-[#0473B9] rounded focus:ring-4 focus:outline-none
-                    focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800'>View All Blogs</Link>
+                    focus:ring-blue-300'>View All Blogs</Link>
                   </div>
             </div>
             
           </div>
-        </div>
+        </section>
   )
 }
 

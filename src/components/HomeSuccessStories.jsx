@@ -67,7 +67,7 @@ const HomeSuccessStories = () => {
         
         </div>
          <div className="w-[90%] m-auto text-center mt-[50px]">
-                <Link to={'/allsuccessstories'} className="inline-flex items-center px-15 py-3 text-sm text-center text-white bg-[#006D95] hover:bg-[#0473B9] rounded focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                <Link to={'/allsuccessstories'} className="inline-flex items-center px-15 py-3 text-sm text-center text-white bg-[#006D95] hover:bg-[#0473B9] rounded focus:ring-4 focus:outline-none focus:ring-blue-300">
                               View All 
                 </Link>
         </div>

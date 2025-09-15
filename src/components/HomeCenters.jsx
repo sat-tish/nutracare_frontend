@@ -87,7 +87,7 @@ const settings = {
       </div>
       
         <div className="w-[90%] text-end mt-[50px]">
-             <Link to="/allcenters" className="inline-flex items-center px-3 py-1.5 text-sm text-center text-white bg-[#006D95] hover:bg-[#0473B9] rounded focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">View more +</Link>  
+             <Link to="/allcenters" className="inline-flex items-center px-3 py-1.5 text-sm text-center text-white bg-[#006D95] hover:bg-[#0473B9] rounded focus:ring-4 focus:outline-none focus:ring-blue-300">View more +</Link>  
          </div>
     </section>
   )

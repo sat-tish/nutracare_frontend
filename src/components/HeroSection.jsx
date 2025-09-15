@@ -7,7 +7,7 @@ import Category from "../commonComponents/Category"
 
 const HeroSection = () => {
   return (
-    <div className="w-full md:h-[80vh] bg-gray-700 bg-[url('./assets/images/background-images/b2.jpg')] bg-no-repeat bg-cover bg-center bg-blend-soft-light">
+    <section className="w-full md:h-[80vh] bg-gray-700 bg-[url('./assets/images/background-images/b2.jpg')] bg-no-repeat bg-cover bg-center bg-blend-soft-light mt-14">
     <div className="w-[90%] h-full m-auto lg:grid grid-cols-2">
          <div className="h-full flex justify-center items-center">
         <div className=" sm:w-[70%] my-[50px] bg-white py-5 rounded shadow">
@@ -47,7 +47,7 @@ const HeroSection = () => {
     
      
     </div>
-    </div>
+    </section>
   )
 }
 

@@ -9,7 +9,7 @@ import Information from "../components/Information"
 
 const Home = () => {
   return (
-    <div>
+    <>
       <HeroSection />
       <HomeCenters />
       <HomeProffesionals />
@@ -18,7 +18,7 @@ const Home = () => {
        <HomeJoinUs />
       <HomeBlogs />
      
-    </div>
+    </>
   )
 }
 

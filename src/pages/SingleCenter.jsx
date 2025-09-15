@@ -5,9 +5,9 @@ import WeekTimings from '../commonComponents/WeekTimings';
 
 const SingleCenter = () => {
   return (
-     <section className='w-full bg-[#f5fafc]'>
+     <section className='w-full bg-[#f5fafc] mt-14'>
      <div className="w-[90%] md:w-[80%] lg:w-[70%] m-auto py-[50px]">
-                <div className="w-[95%] pb-5 bg-white border border-gray-300 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+                <div className="w-[95%] pb-5 bg-white border border-gray-300 rounded-lg shadow">
                        <div  className="w-full flex flex-wrap gap-x-5 xl:gap-x-[100px] items-center ">
                           <div className='max-md:m-auto'>
                              <img className=" rounded-[50%] w-[300px] h-[300px] p-5 " src={centerName} alt="" />
@@ -15,15 +15,15 @@ const SingleCenter = () => {
                           
                      
                           <div className="p-5">
-                              <h1 className="mb-2 text-lg font-semibold text-gray-900 dark:text-white">Name of Center</h1>
-                           <p className="mb-3 text-sm font-medium text-gray-900 dark:text-gray-400">Speciality</p>
-                          <p className="mb-3 text-sm font-normal text-gray-700 dark:text-gray-400">address of center</p>
-                          <p className="mb-3 text-sm font-normal text-gray-700 dark:text-gray-400">emailaddress@email.com</p>
-                          <p className="mb-5 text-sm font-normal text-gray-700 dark:text-gray-400">phone number</p>
+                              <h1 className="mb-2 text-lg font-semibold text-gray-900">Name of Center</h1>
+                          <p className="mb-3 text-sm font-medium text-gray-900">Speciality</p>
+                          <p className="mb-3 text-sm font-normal text-gray-700">address of center</p>
+                          <p className="mb-3 text-sm font-normal text-gray-700">emailaddress@email.com</p>
+                          <p className="mb-5 text-sm font-normal text-gray-700">phone number</p>
                           <div className='flex gap-5 justify-between'>
-                             <button className='inline-flex items-center px-3 py-1.5 text-sm text-center text-white bg-[#006D95] hover:bg-[#0473B9] rounded focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800'>
+                             <button className='inline-flex items-center px-3 py-1.5 text-sm text-center text-white bg-[#006D95] hover:bg-[#0473B9] rounded focus:ring-4 focus:outline-none focus:ring-blue-300'>
                              Contact now</button>
-                             <button className='inline-flex items-center px-3 py-1.5 text-sm text-center text-white bg-[#006D95] hover:bg-[#0473B9] rounded focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800'>
+                             <button className='inline-flex items-center px-3 py-1.5 text-sm text-center text-white bg-[#006D95] hover:bg-[#0473B9] rounded focus:ring-4 focus:outline-none focus:ring-blue-300'>
                              Visit Website</button>
                           </div>
                            
@@ -72,7 +72,7 @@ const SingleCenter = () => {
                      
                   
                   <div className='text-end mt-5'>
-                    <button className='inline-flex items-center px-3 py-1.5 text-sm text-center text-white bg-[#006D95] hover:bg-[#0473B9] rounded focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800'>
+                    <button className='inline-flex items-center px-3 py-1.5 text-sm text-center text-white bg-[#006D95] hover:bg-[#0473B9] rounded focus:ring-4 focus:outline-none focus:ring-blue-300'>
                 Book Appointment</button>
                   </div>
                   </div>

@@ -49,7 +49,7 @@ const AboutUs = () => {
  })
 
   return (
-    <section className="w-full bg-[#f5fafc]">
+    <section className="w-full bg-[#f5fafc] mt-14">
       <div className="pt-[50px]">
          <SectionHeading name="About Us" />
       </div>

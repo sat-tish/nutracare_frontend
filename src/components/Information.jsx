@@ -4,7 +4,7 @@ import SectionHeading from '../commonComponents/SectionHeading'
 
 const Information = () => {
   return (
-    <div className='w-full py-[50px] bg-white'>
+    <section className='w-full py-[50px] bg-white'>
       <SectionHeading name="Holistic Approach" />
       <div className='w-[90%] m-auto grid md:grid-cols-2'>
         <div className='w-full flex justify-center'>
@@ -19,7 +19,7 @@ const Information = () => {
                   sapiente fuga molestias tenetur dolores.</p>
         </div>
       </div>
-    </div>
+    </section>
   )
 }
 

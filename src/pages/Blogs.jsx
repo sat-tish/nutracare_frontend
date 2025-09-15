@@ -40,7 +40,7 @@ const [error, setError] = useState(null);
   
 
   return (
-    <div className="w-full">
+    <section className="w-full mt-14">
       
       <SearchBox />
       <div className="my-[50px]">
@@ -49,7 +49,7 @@ const [error, setError] = useState(null);
       <div className="w-[90%] m-auto grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
           {allBlogs}
       </div>
-     </div>
+     </section>
   )
 }
 

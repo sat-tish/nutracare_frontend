@@ -41,7 +41,7 @@ const AllSuccessStories = () => {
 
 
   return (
-    <div className="w-full">
+    <section className="w-full mt-14">
       
       <SearchBox />
       <div className="my-[50px]">
@@ -53,7 +53,7 @@ const AllSuccessStories = () => {
       
       
 
-    </div>
+    </section>
   )
 }
 

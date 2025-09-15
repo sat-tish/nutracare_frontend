@@ -39,9 +39,9 @@ const [error, setError] = useState(null);
   
 
   return (
-    <section className='w-full bg-[#f5fafc]'>
+    <section className='w-full bg-[#f5fafc] mt-14'>
      <div className="w-[90%] md:w-[80%] lg:w-[70%] m-auto py-[50px]">
-                <div className="w-[95%] pb-5 bg-white border border-gray-300 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+                <div className="w-[95%] pb-5 bg-white border border-gray-300 rounded-lg shadow ">
                        <div  className="w-full grid sm:grid-cols-1 lg:grid-cols-2 gap-x-5">
                           <div>
                              <img className="rounded-sm min-w-[380px] max-h-[400px] p-5 max-lg:m-auto" src={blogImg} alt="" />
@@ -49,9 +49,9 @@ const [error, setError] = useState(null);
                               
                           
                           <div className="p-5 flex flex-col justify-center">
-                          <h1 className="mb-2 text-2xl font-semibold text-gray-900 dark:text-white">Blog name</h1>
-                          <p className="mb-3 text-sm font-medium text-gray-900 dark:text-gray-400">blog subject</p>
-                          <p className="mb-3 text-sm font-normal text-gray-700 dark:text-gray-400">short information</p>
+                          <h1 className="mb-2 text-2xl font-semibold text-gray-900">Blog name</h1>
+                          <p className="mb-3 text-sm font-medium text-gray-900 ">blog subject</p>
+                          <p className="mb-3 text-sm font-normal text-gray-700 ">short information</p>
                         
                           
                       </div>

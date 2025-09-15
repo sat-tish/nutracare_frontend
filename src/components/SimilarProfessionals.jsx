@@ -39,7 +39,7 @@ const[doctorList, setDoctorList] = useState([]);
     });
 
   return (
-    <div className="w-full">
+    <section className="w-full">
       
       
       <div className="my-[50px]">
@@ -51,7 +51,7 @@ const[doctorList, setDoctorList] = useState([]);
       
       
 
-    </div>
+    </section>
   )
 }
 

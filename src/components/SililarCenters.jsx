@@ -38,7 +38,7 @@ const SililarCenters = () => {
       })
 
   return (
-     <div className="w-full">
+     <section className="w-full">
       
       <div className="my-[50px]">
          <SectionHeading name="Similar Centers" />
@@ -49,7 +49,7 @@ const SililarCenters = () => {
       
       
 
-    </div>
+    </section>
   )
 }
 

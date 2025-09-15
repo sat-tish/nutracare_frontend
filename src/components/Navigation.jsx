@@ -3,7 +3,7 @@ import { Link } from "react-router";
 
 const Navigation = () => {
   return (
-    <div className="grid max-sm:grid-cols-2 grid-cols-3 shadow bg-white w-full h-14">
+    <nav className="grid max-sm:grid-cols-2 grid-cols-3 shadow bg-white w-full h-14 fixed top-0 z-40">
       <div className="flex items-center w-full h-full ps-5 sm:ps-8">
         <img className='h-10' src={logoImage} alt="" />
       </div>
@@ -15,14 +15,14 @@ const Navigation = () => {
 </button>
       </div>
       <div className='flex justify-end items-center pe-8 max-sm:hidden col-span-2 sm:space-x-6 md:space-x-10 font-medium'>
-       <Link to="/" className='hover:font-semibold'>Home</Link>
+       <Link to="/nutracare_frontend" className='hover:font-semibold'>Home</Link>
        <Link to="/categories" className='hover:font-semibold'>Categories</Link>
        <Link to="/blogs" className='hover:font-semibold'>Blogs</Link>
        <Link to="/aboutus" className='hover:font-semibold'>About Us</Link>
        <Link to="/joinus" className='hover:font-semibold'>Join Us</Link>
       </div>
 
-    </div>
+    </nav>
   )
 }
 

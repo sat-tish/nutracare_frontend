@@ -26,7 +26,7 @@ const Footer = () => {
          
             <div className="flex flex-col gap-3 mb-3">
               <h1 className="font-medium mb-2 text-white">Links</h1>
-              <FooterLinkCategories linkTo="/" linkName="Home" />
+              <FooterLinkCategories linkTo="/nutracare_frontend" linkName="Home" />
               <FooterLinkCategories linkTo="/categories" linkName="Categories" />
               <FooterLinkCategories linkTo="/blogs" linkName="Blogs" />
               <FooterLinkCategories linkTo="/aboutus" linkName="About us" />

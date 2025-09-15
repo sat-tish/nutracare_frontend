@@ -55,12 +55,12 @@ const SingleGallary = () => {
   })
 
   return (
-    <div className='w-full'>
+    <section className='w-full'>
       <h1 className='text-2xl font-semibold text-center p-5'>Gallary</h1>
       <div className='grid md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-3'>
           {gallaryImgList }
       </div>
-    </div>
+    </section>
   )
 }
 
