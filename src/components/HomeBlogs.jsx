@@ -1,34 +1,21 @@
-import React, {useState, useEffect} from 'react'
-import axios from 'axios';
+import React, {useEffect} from 'react'
 import BlogCard from '../commonComponents/BlogCard'
 import cardImage from '../assets/images/illustrations/b3.jpeg'
 import { Link } from 'react-router';
+import {useDispatch, useSelector} from 'react-redux'
+import { fetchAllBlogs } from '../features/allBlogsSlice';
 
 const HomeBlogs = () => {
+   const dispatch = useDispatch();
+   const {allBlogs, loading, error} = useSelector((state)=>state.allBlogs);
+   useEffect(()=>{
+      dispatch(fetchAllBlogs());
+   },[dispatch]);
 
-const[blogItem, setBlogItem] = useState([]);
-const [loading, setLoading] = useState(true);
-const [error, setError] = useState(null);
-
-    useEffect(()=>{
-        axios.get("https://jsonplaceholder.typicode.com/users")
-        .then((res)=>{
-          setBlogItem(res.data);
-          setLoading(false);
-        }
-      )
-        .catch((err)=>{
-          console.log(err);
-          setError(error);
-          setLoading(false);
-        }
-        )
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-    },[]);
   if (loading) return <div>Loading data...</div>;
   if (error) return <div>Error: {error.message}</div>;
 
-  const allBlogs = blogItem.map((e)=>{
+  const allBlogsList = allBlogs.map((e)=>{
         for(let i=[e.id]; i<3; i++){
               return(
                 <div className="mb-6">
@@ -44,7 +31,7 @@ const [error, setError] = useState(null);
      <section className='w-full py-[50px]'>
            
           <div className='w-[90%] lg:w-[80%] m-auto grid lg:grid-cols-4'>
-            {allBlogs}
+            {allBlogsList}
            
             <div className='w-full min-h-[400px] lg:col-span-2'>
                 <div className='p-5 w-full h-full flex justify-center items-center flex-col gap-5'>

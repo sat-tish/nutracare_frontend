@@ -21,7 +21,7 @@ function App() {
     <>
     <Navigation />
     <Routes>
-      <Route path='/nutracare_frontend' element= {<Home />}/>
+      <Route path='/' element= {<Home />}/>
       <Route path='/blogs' element= {<Blogs />}/>
       <Route path='/categories' element= {<Categories />}/>
       <Route path='/aboutus' element= {<AboutUs />}/>
@@ -35,8 +35,7 @@ function App() {
       <Route path="/singleblog" element={<SingleBlog />} />
     </Routes>
     <Footer />
-  
-    </>
+  </>
   )
 }
 

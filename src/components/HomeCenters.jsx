@@ -1,5 +1,4 @@
-import React, {useState, useEffect} from 'react'
-import axios from 'axios';
+import React, {useEffect} from 'react'
 import CenterCard from "../commonComponents/CenterCard"
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -7,28 +6,17 @@ import Slider from "react-slick";
 import sliderImg from '../assets/images/background-images/b6.jpg'
 import SectionHeading from "../commonComponents/SectionHeading";
 import { Link } from "react-router";
+import {useDispatch, useSelector} from 'react-redux'
+import { fetchAllCenters } from '../features/allCentersSlice';
 
 const HomeCenters = () => {
+  
+  const dispatch = useDispatch();
+    const {allCenters, loading, error} = useSelector((state)=>state.allCenters);
+     useEffect(()=>{
+        dispatch(fetchAllCenters());
+     },[dispatch]);
 
-const[centersList, setCentersList] = useState([]);
-const [loading, setLoading] = useState(true);
-const [error, setError] = useState(null);
-
-    useEffect(()=>{
-        axios.get("https://jsonplaceholder.typicode.com/users")
-        .then((res)=>{
-          setCentersList(res.data);
-          setLoading(false);
-        }
-      )
-        .catch((err)=>{
-          console.log(err);
-          setError(error);
-          setLoading(false);
-        }
-        )
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-    },[]);
   if (loading) return <div>Loading data...</div>;
   if (error) return <div>Error: {error.message}</div>;
 const settings = {
@@ -67,7 +55,7 @@ const settings = {
     ]
   };
 
-  const slideItems = centersList.map((e)=>{
+  const slideItems = allCenters.map((e)=>{
         return(
             <CenterCard key={e.id} cardImage={sliderImg} centerName={e.company.name} email={e.email} address={e.address.city}/>
         )

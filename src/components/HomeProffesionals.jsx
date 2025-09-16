@@ -1,36 +1,22 @@
-import React, {useState, useEffect} from 'react'
-import axios from 'axios';
+import React, {useEffect} from 'react'
+import {useDispatch, useSelector} from 'react-redux'
+import { fetchAllProfessionals } from '../features/allProfessionalsSlice';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import personOne from '../assets/images/illustrations/person_1.jpg.webp'
-// import personFive from '../assets/images/illustrations/person_5.jpg.webp'
-// import personSix from '../assets/images/illustrations/person_6.jpg.webp'
 import ProfessionalsCard from "../commonComponents/ProfessionalsCard";
 import SectionHeading from "../commonComponents/SectionHeading";
 import { Link } from 'react-router';
 
 const HomeProffesionals = () => {
 
- const[doctorList, setDoctorList] = useState([]);
-      const [loading, setLoading] = useState(true);
-      const [error, setError] = useState(null);
+  const dispatch = useDispatch();
+      const {allProfessionals, loading, error} = useSelector((state)=>state.allProfessionals);
+       useEffect(()=>{
+          dispatch(fetchAllProfessionals());
+       },[dispatch]);
 
-    useEffect(()=>{
-        axios.get("https://jsonplaceholder.typicode.com/users")
-        .then((res)=>{
-          setDoctorList(res.data);
-          setLoading(false);
-        }
-      )
-        .catch((err)=>{
-          console.log(err);
-          setError(error);
-          setLoading(false);
-        }
-        )
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-    },[]);
   if (loading) return <div>Loading data...</div>;
   if (error) return <div>Error: {error.message}</div>;
 
@@ -71,7 +57,7 @@ const HomeProffesionals = () => {
     
   };
       
-    const slideItems = doctorList.map((e)=>{
+    const slideItems = allProfessionals.map((e)=>{
         return(
             <ProfessionalsCard key={e.id} doctorName={e.name} cardImage={personOne} phone={e.phone} email={e.email}
             street={e.address.street} suite={e.address.suite} city={e.address.city}/>

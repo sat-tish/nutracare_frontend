@@ -2,8 +2,6 @@ import { Link } from "react-router"
 import SocialMediaIcons from "../commonComponents/socialMediaIcons"
 import FooterLinkCategories from "../commonComponents/FooterLinkCategories"
 
-
-
 const Footer = () => {
   return (
     <section className="w-full bg-[#006D95] py-[50px]">
@@ -26,7 +24,7 @@ const Footer = () => {
          
             <div className="flex flex-col gap-3 mb-3">
               <h1 className="font-medium mb-2 text-white">Links</h1>
-              <FooterLinkCategories linkTo="/nutracare_frontend" linkName="Home" />
+              <FooterLinkCategories linkTo="/" linkName="Home" />
               <FooterLinkCategories linkTo="/categories" linkName="Categories" />
               <FooterLinkCategories linkTo="/blogs" linkName="Blogs" />
               <FooterLinkCategories linkTo="/aboutus" linkName="About us" />

@@ -2,6 +2,7 @@ import personOne from '../assets/images/illustrations/person_1.jpg.webp'
 import SimilarProfessionals from '../components/SimilarProfessionals';
 import SingleGallary from '../components/SingleGallary';
 import WeekTimings from '../commonComponents/WeekTimings';
+import SectionHeading from '../commonComponents/SectionHeading';
 
 const SingleProfessional = () => {
 
@@ -88,6 +89,10 @@ const SingleProfessional = () => {
             </div>
             <div className='w-[90%] m-auto mb-5'>
                     <SingleGallary />
+            </div>
+            <div className="my-[50px]">
+        
+              <SectionHeading name="All Similar Professionals" />
             </div>
             <SimilarProfessionals />
             </section>

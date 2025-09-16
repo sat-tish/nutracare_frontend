@@ -2,6 +2,7 @@ import centerName from '../assets/images/illustrations/yogaImage.jpg'
 import SililarCenters from '../components/SililarCenters';
 import SingleGallary from '../components/SingleGallary';
 import WeekTimings from '../commonComponents/WeekTimings';
+import SectionHeading from '../commonComponents/SectionHeading';
 
 const SingleCenter = () => {
   return (
@@ -86,6 +87,9 @@ const SingleCenter = () => {
             <div className='w-[90%] m-auto mb-5'>
                     <SingleGallary />
             </div>
+             <div className="my-[50px]">
+                <SectionHeading name="Similar Centers" />
+             </div>
             <SililarCenters />
             </section>
   )

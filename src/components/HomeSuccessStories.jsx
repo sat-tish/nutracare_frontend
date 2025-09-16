@@ -1,36 +1,21 @@
-import React, {useState, useEffect} from 'react'
-import axios from 'axios';
+import React, {useEffect} from 'react'
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import personOne from '../assets/images/illustrations/person_1.jpg.webp'
-// import personFive from '../assets/images/illustrations/person_5.jpg.webp'
-// import personSix from '../assets/images/illustrations/person_6.jpg.webp'
 import SuccessStoriesCard from "../commonComponents/SuccessStoriesCard";
 import SectionHeading from "../commonComponents/SectionHeading";
 import { Link } from 'react-router';
+import {useDispatch, useSelector} from 'react-redux'
+import { fetchAllSuccessStories } from '../features/allSuccessStories';
 
 const HomeSuccessStories = () => {
-
- const[doctorList, setDoctorList] = useState([]);
-      const [loading, setLoading] = useState(true);
-      const [error, setError] = useState(null);
-
+ const dispatch = useDispatch();
+   const {allSuccessStories, loading, error} = useSelector((state)=>state.allSuccessStories);
     useEffect(()=>{
-        axios.get("https://jsonplaceholder.typicode.com/users")
-        .then((res)=>{
-          setDoctorList(res.data);
-          setLoading(false);
-        }
-      )
-        .catch((err)=>{
-          console.log(err);
-          setError(error);
-          setLoading(false);
-        }
-        )
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-    },[]);
+       dispatch(fetchAllSuccessStories());
+    },[dispatch]);
+
   if (loading) return <div>Loading data...</div>;
   if (error) return <div>Error: {error.message}</div>;
 
@@ -45,7 +30,7 @@ const HomeSuccessStories = () => {
     
   };
 
-    const slideItems = doctorList.map((e)=>{
+    const slideItems = allSuccessStories.map((e)=>{
         return(
             <SuccessStoriesCard key={e.id} cardImage={personOne} doctorName={e.name} email={e.email}
             street={e.address.street} suite={e.address.suite} city={e.address.city} />   

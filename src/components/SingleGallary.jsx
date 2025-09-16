@@ -1,6 +1,18 @@
 import gallaryImg from '../assets/images/illustrations/b6.webp'
+// import React, {useEffect} from 'react'
+// import {useDispatch, useSelector} from 'react-redux'
+// import { fetchAllProfessionals } from '../features/allProfessionalsSlice';
 
 const SingleGallary = () => {
+
+  // const dispatch = useDispatch();
+  //   const {allProfessionals, loading, error} = useSelector((state)=>state.allProfessionals);
+  //    useEffect(()=>{
+  //       dispatch(fetchAllProfessionals());
+  //    },[dispatch]);
+
+  // if (loading) return <div>Loading data...</div>;
+  // if (error) return <div>Error: {error.message}</div>;
 
   const gallaryImage = [
     {
