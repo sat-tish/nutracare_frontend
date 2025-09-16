@@ -21,18 +21,18 @@ function App() {
     <>
     <Navigation />
     <Routes>
-      <Route path='/' element= {<Home />}/>
-      <Route path='/blogs' element= {<Blogs />}/>
-      <Route path='/categories' element= {<Categories />}/>
-      <Route path='/aboutus' element= {<AboutUs />}/>
-      <Route path='/joinus' element= {<JoinUs />}/>
-      <Route path="/allcenters" element= {<AllCenters />}/>
-      <Route path="/allprofessionals" element= {<AllProfessionals />}/>
-      <Route path="/singlecenter" element= {<SingleCenter />}/>
-      <Route path="/singleprofessional" element={<SingleProfessional />} />
-      <Route path="/allsuccessstories" element={<AllSuccessStories />} />
-      <Route path="/singlesuccessstory" element={<SingleSuccessStory />} />
-      <Route path="/singleblog" element={<SingleBlog />} />
+      <Route path='/nutracare_frontend' element= {<Home />}/>
+      <Route path='/nutracare_frontend/blogs' element= {<Blogs />}/>
+      <Route path='/nutracare_frontend/categories' element= {<Categories />}/>
+      <Route path='/nutracare_frontend/aboutus' element= {<AboutUs />}/>
+      <Route path='/nutracare_frontend/joinus' element= {<JoinUs />}/>
+      <Route path="/nutracare_frontend/allcenters" element= {<AllCenters />}/>
+      <Route path="/nutracare_frontend/allprofessionals" element= {<AllProfessionals />}/>
+      <Route path="/nutracare_frontend/singlecenter" element= {<SingleCenter />}/>
+      <Route path="/nutracare_frontend/singleprofessional" element={<SingleProfessional />} />
+      <Route path="/nutracare_frontend/allsuccessstories" element={<AllSuccessStories />} />
+      <Route path="/nutracare_frontend/singlesuccessstory" element={<SingleSuccessStory />} />
+      <Route path="/nutracare_frontend/singleblog" element={<SingleBlog />} />
     </Routes>
     <Footer />
   </>

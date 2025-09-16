@@ -15,11 +15,11 @@ const Navigation = () => {
 </button>
       </div>
       <div className='flex justify-end items-center pe-8 max-sm:hidden col-span-2 sm:space-x-6 md:space-x-10 font-medium'>
-       <Link to="/" className='hover:font-semibold'>Home</Link>
-       <Link to="/categories" className='hover:font-semibold'>Categories</Link>
-       <Link to="/blogs" className='hover:font-semibold'>Blogs</Link>
-       <Link to="/aboutus" className='hover:font-semibold'>About Us</Link>
-       <Link to="/joinus" className='hover:font-semibold'>Join Us</Link>
+       <Link to="/nutracare_frontend/" className='hover:font-semibold'>Home</Link>
+       <Link to="/nutracare_frontend/categories" className='hover:font-semibold'>Categories</Link>
+       <Link to="/nutracare_frontend/blogs" className='hover:font-semibold'>Blogs</Link>
+       <Link to="/nutracare_frontend/aboutus" className='hover:font-semibold'>About Us</Link>
+       <Link to="/nutracare_frontend/joinus" className='hover:font-semibold'>Join Us</Link>
       </div>
 
     </nav>

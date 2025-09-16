@@ -40,7 +40,7 @@ const HomeBlogs = () => {
                         doloribus dolore? Nobis deserunt, possimus corporis ut nulla, 
                         cupiditate illum quo odit sed, laboriosam quidem consectetur assumenda.</p>
                 
-                   <Link to={'/blogs'} className='w-[70%] flex justify-center items-center px-3 py-3 text-center text-white bg-[#006D95] hover:bg-[#0473B9] rounded focus:ring-4 focus:outline-none
+                   <Link to={'/nutracare_frontend/blogs'} className='w-[70%] flex justify-center items-center px-3 py-3 text-center text-white bg-[#006D95] hover:bg-[#0473B9] rounded focus:ring-4 focus:outline-none
                     focus:ring-blue-300'>View All Blogs</Link>
                   </div>
             </div>
