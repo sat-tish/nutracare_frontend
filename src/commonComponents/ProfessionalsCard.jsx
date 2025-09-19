@@ -3,15 +3,16 @@ import { Link } from "react-router"
 
 const ProfessionalsCard = (props) => {
   return (
-      <div className="max-w-sm">
-                <div key={props.key} className="w-[90%] bg-white border border-gray-300 rounded-lg shadow  m-auto">
-                     
-                          <img className="rounded-sm w-60 h-60 m-auto pt-6" src={props.cardImage} alt="" />
-                     
+      <div key={props.key} className="max-lg:w-full max-w-sm">
+                <div className="max-w-[90%] bg-white border border-gray-300 rounded-lg shadow  m-auto">
+                    
+                        <img className="rounded-sm w-[300px] h-[300px] m-auto pt-6 px-5" src={props.cardImage} alt="" />
+                    
+                          
+                    
                       <div className="p-5">
                           
-                              <Link to={'/singleprofessional'} className="mb-4 text-lg font-semibold text-gray-900 ">{props.doctorName}</Link>
-                        
+                          <h1 className="mb-4 text-lg font-semibold text-gray-900 ">{props.doctorName}</h1>
                           <p className="mb-3 text-sm font-medium text-gray-900 dark:text-gray-400">Speciality</p>
                           <p className="mb-3 text-sm font-normal text-gray-700 dark:text-gray-400">{props.street}, {props.suite}, {props.city}</p>
                           <p className="mb-3 text-sm font-normal text-gray-700 dark:text-gray-400">{props.email}</p>

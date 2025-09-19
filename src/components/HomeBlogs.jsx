@@ -18,8 +18,8 @@ const HomeBlogs = () => {
   const allBlogsList = allBlogs.map((e)=>{
         for(let i=[e.id]; i<3; i++){
               return(
-                <div className="mb-6">
-                   <BlogCard key={e.id} cardImage={cardImage} blogName={e.name} />
+                <div key={e.id} className="mb-6">
+                   <BlogCard  cardImage={cardImage} blogName={e.name} />
                 </div>
            
                     )

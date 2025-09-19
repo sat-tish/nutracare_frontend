@@ -11,7 +11,7 @@ const HeroSection = () => {
     <div className="w-[90%] h-full m-auto lg:grid grid-cols-2">
          <div className="h-full flex justify-center items-center">
         <div className=" sm:w-[70%] my-[50px] bg-white py-5 rounded shadow">
-            <h1 className="text-center font-semibold mt-7 mb-7 px-5"> Find a Healthcare Professional / Center near you</h1>
+            <h1 className="text-center text-2xl font-semibold mt-7 mb-7 px-5"> Find a Healthcare Professional / Center near you</h1>
             <form action="" className="w-[84%] flex flex-col justify-center gap-y-4 m-auto mb-5">
                 <SelectCity />
                 <DoctorCenter />

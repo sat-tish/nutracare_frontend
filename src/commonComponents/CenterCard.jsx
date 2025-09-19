@@ -3,9 +3,9 @@ import { Link } from "react-router"
 
 const CenterCard = (props) => {
   return (
-    <div className="max-w-sm">
+    <div key={props.key} className="max-w-sm">
               
-                 <div key={props.key} className="w-[90%] bg-white border border-gray-300 rounded-lg shadow m-auto">
+                 <div className="w-[90%] bg-white border border-gray-300 rounded-lg shadow m-auto">
                       <div className='relative max-w-sm overflow-hidden bg-cover bg-no-repeat'>
                           <img className="rounded-t-lg h-50 max-h-50 transition duration-300 ease-in-out hover:scale-110" src={props.cardImage} alt="" />
                       </div>

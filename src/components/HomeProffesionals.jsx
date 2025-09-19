@@ -30,7 +30,7 @@ const HomeProffesionals = () => {
     autoplaySpeed: 3000,
     responsive: [
       {
-        breakpoint: 1024,
+        breakpoint: 1200,
         settings: {
           slidesToShow: 3,
           slidesToScroll: 1,
@@ -46,13 +46,7 @@ const HomeProffesionals = () => {
           initialSlide: 2
         }
       },
-      {
-        breakpoint: 480,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1
-        }
-      }
+     
     ]
     
   };
@@ -63,25 +57,38 @@ const HomeProffesionals = () => {
             street={e.address.street} suite={e.address.suite} city={e.address.city}/>
         )
     });
+    const slideItemsMobile = allProfessionals.map((e)=>{
+     for(let i=[e.id]; i<5; i++){
+              return(
+                <div key={e.id} className="mb-6 m-auto">
+                   <ProfessionalsCard  doctorName={e.name} cardImage={personOne} phone={e.phone} email={e.email}
+            street={e.address.street} suite={e.address.suite} city={e.address.city}/>
+                </div>
+           
+                    )
+        }
+      });
 
 
   return (
     <section className="w-full bg-[#EAF6FC] py-[50px]">
         <div className="w-[90%] m-auto">
           <SectionHeading name="Find a Health Professional near you" />
-           <div className="w-[90%] m-auto">
+          </div>
+
+          <div className="lg:hidden w-[90%] m-auto grid md:grid-cols-2 mb-5">
+          {slideItemsMobile}
+      </div>
+           <div className="max-lg:hidden w-[90%] m-auto">
            <div className="slider-container">
            <Slider {...settings}>
            {slideItems}
-      </Slider>
+            </Slider>
           </div>
-           </div>
-       
-        
-        </div>
-         <div className="w-[90%] text-end mt-[50px]">
-                <Link to={'/nutracare_frontend/allprofessionals'} className='inline-flex items-center px-3 py-1.5 text-sm text-center text-white bg-[#006D95] hover:bg-[#0473B9] rounded focus:ring-4 focus:outline-none focus:ring-blue-300'>
-                View more +</Link>
+         </div>
+         <div className="w-[90%] text-end lg:mt-[50px]">
+                <Link to={'/nutracare_frontend/allprofessionals'} className='inline-flex items-center px-10 py-1.5 text-center text-white bg-[#006D95] hover:bg-[#0473B9] rounded focus:ring-4 focus:outline-none focus:ring-blue-300'>
+                View All</Link>
         </div>
     </section>
    
