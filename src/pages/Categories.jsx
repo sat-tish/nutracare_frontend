@@ -30,14 +30,14 @@ const Categories = () => {
       });
 
   return (
-     <section className="w-full bg-[#f5fafc] mt-14">
+     <section className="w-full bg-[#f5fafc] mt-14 m-auto">
       
       <SearchBox />
       <div className="my-[50px]">
          <SectionHeading name="Category name" />
       </div>
       <CategoriesTwo />
-      <div className="w-[90%] text-end pb-[50px]">
+      <div className="w-[90%] text-end pb-[50px] m-auto">
                 <Link to={'/allprofessionals'} className='inline-flex items-center px-3 py-1.5 text-sm text-center text-white bg-[#006D95] hover:bg-[#0473B9] rounded focus:ring-4 focus:outline-none focus:ring-blue-300 '>
                 View more +</Link>
         </div>

@@ -11,7 +11,7 @@ const SuccessStoriesCard = (props) => {
                      
                       <div className="p-5 flex-1">
                           
-                              <Link to={'/singlesuccessstory'} className="mb-2 text-lg font-semibold text-gray-900">{props.doctorName}</Link>
+                              <Link to={'/nutracare_frontend/singlesuccessstory'} className="mb-2 text-lg font-semibold text-gray-900">{props.doctorName}</Link>
                          
                           <p className="mb-3 text-sm font-medium text-gray-900 dark:text-gray-400">Speciality</p>
                           <p className="mb-3 text-sm font-normal text-gray-700 dark:text-gray-400">{props.street}, {props.suite}, {props.city}</p>
@@ -20,7 +20,7 @@ const SuccessStoriesCard = (props) => {
                              saepe autem unde? Soluta natus praesentium beatae perspiciatis. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam magni quibusdam quaerat enim? Consectetur aut consequuntur harum officiis sint sapiente architecto
                               et voluptas velit eveniet eum ab accusamus, beatae repudiandae!</p>
                           <div className='text-end'>
-                          <Link to={'/singlesuccessstory'} className=" text-center text-[#0473B9]">
+                          <Link to={'/nutracare_frontend/singlesuccessstory'} className=" text-center text-[#0473B9]">
                               Read more +
                           </Link>
                           </div>

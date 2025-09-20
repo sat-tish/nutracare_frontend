@@ -11,13 +11,13 @@ const BlogCard = (props) => {
                      
                       <div className="p-5">
                           
-                              <Link to={'/singleblog'} className="mb-2 text-lg font-semibold text-gray-900 ">{props.blogName}</Link>
+                              <Link to={'/nutracare_frontend/singleblog'} className="mb-2 text-lg font-semibold text-gray-900 ">{props.blogName}</Link>
                           
                           <p className="mb-3 text-sm font-normal text-gray-900 ">Author name</p>
                           
                           <p className="mb-5 text-sm font-normal text-gray-700">Short information about blog. Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
                           <div>
-                          <Link to={'/singleblog'} className=" text-[#0086C6] font-semibold">
+                          <Link to={'/nutracare_frontend/singleblog'} className=" text-[#0086C6] font-semibold">
                               Read more +
                           </Link>
                           </div>

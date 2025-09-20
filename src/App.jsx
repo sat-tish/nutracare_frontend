@@ -16,7 +16,6 @@ import SingleBlog from "./pages/SingleBlog"
 
 function App() {
 
-
   return (
     <>
     <Navigation />

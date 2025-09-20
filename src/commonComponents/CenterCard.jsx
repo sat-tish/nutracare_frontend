@@ -11,7 +11,7 @@ const CenterCard = (props) => {
                       </div>
                       <div className="p-5">
                           
-                              <Link to={'/singlecenter'} className="mb-2 text-lg font-semibold text-gray-900">{props.centerName}</Link>
+                              <Link to={'/nutracare_frontend/singlecenter'} className="mb-2 text-lg font-semibold text-gray-900">{props.centerName}</Link>
                         
                           <p className="text-sm font-normal text-gray-700 dark:text-gray-400">{props.address}</p>
                           <p className="mb-3 text-sm font-normal text-gray-700 dark:text-gray-400">{props.email}</p>
@@ -23,7 +23,7 @@ const CenterCard = (props) => {
                               <h6 className='text-sm font-normal text-gray-700 dark:text-gray-400'>Traditional Chinese medicine</h6>
                           </div>
                           <div className='text-end'>
-                          <Link to={'/singlecenter'} className="inline-flex items-center px-3 py-1.5 text-sm text-center text-white bg-[#0086C6] hover:bg-[#0473B9] rounded focus:ring-4 focus:outline-none focus:ring-blue-300 ">
+                          <Link to={'/nutracare_frontend/singlecenter'} className="inline-flex items-center px-3 py-1.5 text-sm text-center text-white bg-[#0086C6] hover:bg-[#0473B9] rounded focus:ring-4 focus:outline-none focus:ring-blue-300 ">
                               Read more +
                           </Link>
                           </div>

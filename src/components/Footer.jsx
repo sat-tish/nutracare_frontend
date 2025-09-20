@@ -59,7 +59,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="mt-[80px] px-5">
-         <h1 className="text-sm text-center text-gray-100">Copyright ©2024 All rights reserved | Made by Nutracare 360 Pvt Ltd.</h1>
+         <h1 className="text-sm text-center text-gray-100">Copyright ©2024 All rights reserved | Made by Nutracare 360 Inc.</h1>
       </div>
     </section>
   )

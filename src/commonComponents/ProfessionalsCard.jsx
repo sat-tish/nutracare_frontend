@@ -18,7 +18,7 @@ const ProfessionalsCard = (props) => {
                           <p className="mb-3 text-sm font-normal text-gray-700 dark:text-gray-400">{props.email}</p>
                           <p className="mb-3 text-sm font-normal text-gray-700 dark:text-gray-400">{props.phone}</p>
                           <div className='text-end'>
-                          <Link to={'/singleprofessional'} className="inline-flex items-center px-3 py-1.5 text-sm text-center text-white bg-[#0086C6] hover:bg-[#0473B9] rounded focus:ring-4 focus:outline-none focus:ring-blue-300">
+                          <Link to={'/nutracare_frontend/singleprofessional'} className="inline-flex items-center px-3 py-1.5 text-sm text-center text-white bg-[#0086C6] hover:bg-[#0473B9] rounded focus:ring-4 focus:outline-none focus:ring-blue-300">
                               View more +
                           </Link>
                           </div>
